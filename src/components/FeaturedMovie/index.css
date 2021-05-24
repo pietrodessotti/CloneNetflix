@@ -96,4 +96,29 @@
   font-size: 18px;
   color: #999;
 }
+
+@media (max-width: 760px) {
+  .featured {
+    height: 90vh;
+  }
+  .featured .featured--vertical .featured--horizontal .featured--name {
+    font-size: 40px;
+  }
+  .featured .featured--vertical .featured--horizontal .featured--info {
+    font-size: 16px;
+  }
+  .featured .featured--vertical .featured--horizontal .featured--description {
+    font-size: 14px;
+    max-width: 100%;
+    margin-right: 30px;
+  }
+  .featured .featured--vertical .featured--horizontal .featured--buttons .featured--watchbutton,
+  .featured .featured--vertical .featured--horizontal .featured--buttons .featured--mylistbutton {
+    display: none;
+    visibility: hidden;
+  }
+  .featured .featured--vertical .featured--horizontal .featured--genres {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

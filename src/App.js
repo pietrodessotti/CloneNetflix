@@ -58,6 +58,18 @@ export default () => {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      <footer>
+        Feito com <span role="img" aria-label="coração">💖</span> pela B7Web<br />
+        Direitos de imagem para Netflix<br />
+        Dados pegos do site Themoviedb.org
+      </footer>
+
+{movieList.length <= 0 &&
+      <div className="loading">
+        <img src="https://i.pinimg.com/originals/f9/0f/76/f90f7689233948005f465d98ead56d44.gif" alt="Página em carregamento - Netflix" />
+      </div>
+}
     </div>
   )
 }
